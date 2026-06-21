@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedIntel AI - Schedule</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <aside class="sidebar">
+        <div class="brand-header">🫀 MedIntel AI</div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="nav-item">Dashboard</a></li>
+            <li><a href="medications.html" class="nav-item active">Schedule</a></li>
+            <li><a href="analytics.html" class="nav-item">Analytics</a></li>
+            <li><a href="chatbot.html" class="nav-item">Chat Assistant</a></li>
+            <li><a href="profile.html" class="nav-item">Profile</a></li>
+        </ul>
+    </aside>
+
+    <main class="main-wrapper">
+        <div class="content-area">
+            <h1 class="page-title">Medication Schedule</h1>
+            
+            <div class="grid-row">
+                <div class="card col-2">
+                    <div class="card-header">Active Medications</div>
+                    <table class="data-table">
+                        <tr>
+                            <th>Medicine</th>
+                            <th>Dosage</th>
+                            <th>Time</th>
+                            <th>Status</th>
+                        </tr>
+                        <tr>
+                            <td>Atorvastatin</td>
+                            <td>20mg</td>
+                            <td>8:00 AM</td>
+                            <td><span class="status-badge status-active">Active</span></td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="card col-1">
+                    <div class="card-header">Add New Medication</div>
+                    <form class="form-group">
+                        <label class="form-label">Name</label>
+                        <input type="text" class="form-control" placeholder="e.g., Metformin">
+                        <label class="form-label" style="margin-top: 10px;">Dosage</label>
+                        <input type="text" class="form-control" placeholder="e.g., 500mg">
+                        <button type="button" class="btn-primary" style="margin-top: 20px; width: 100%;">Save</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
