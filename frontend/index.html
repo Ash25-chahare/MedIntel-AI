@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedIntel AI - Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <aside class="sidebar">
+        <div class="brand-header">🫀 MedIntel AI</div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="nav-item active">Dashboard</a></li>
+            <li><a href="medications.html" class="nav-item">Schedule</a></li>
+            <li><a href="analytics.html" class="nav-item">Analytics</a></li>
+            <li><a href="chatbot.html" class="nav-item">Chat Assistant</a></li>
+            <li><a href="profile.html" class="nav-item">Profile</a></li>
+        </ul>
+    </aside>
+
+    <main class="main-wrapper">
+        <header class="topbar">
+            <input type="text" class="search-bar" placeholder="Search medications...">
+        </header>
+
+        <div class="content-area">
+            <h1 class="page-title">Welcome back, Sarah Jones!</h1>
+            
+            <div class="grid-row">
+                <div class="card col-1">
+                    <div class="card-header">Today's Summary</div>
+                    <div class="metric-value">3 of 4</div>
+                </div>
+                <div class="card col-1">
+                    <div class="card-header">Adherence Rate</div>
+                    <div class="metric-value">92%</div>
+                </div>
+            </div>
+
+            <div class="grid-row">
+                <div class="card col-2">
+                    <div class="card-header">Upcoming Reminders</div>
+                    <div class="reminder-item">
+                        <h4>Metformin - 500mg</h4>
+                        <p>8:00 PM</p>
+                        <button class="btn-teal" onclick="triggerReminderModal()">Take Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="modal-overlay" id="reminderModal">
+        <div class="modal-content">
+            <h2 class="modal-header">Medication Reminder</h2>
+            <p><strong>Metformin - 500mg</strong> at 8:00 PM</p>
+            <div style="margin-top: 20px; display: flex; gap: 10px;">
+                <button class="btn-primary" onclick="closeModal()">Take Now</button>
+                <button class="btn-outline" onclick="closeModal()">Snooze</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
